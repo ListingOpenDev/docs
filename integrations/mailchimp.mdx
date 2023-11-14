@@ -1,33 +1,42 @@
 ---
 title: 'Mailchimp'
-description: 'Example section for showcasing API endpoints'
+description: 'Integrate Mailchimp with ListingOpen to subscribe new visitors to an Audience.'
 ---
 
-<Note>
-  If you're not looking to build API reference documentation, you can delete
-  this section by removing the api-reference folder.
-</Note>
+## Mailchimp API Key
 
-## Welcome
+You will need an API key from Mailchimp to integrate with ListingOpen. To create one, follow these simple steps:
 
-There are two ways to build API documentation: [OpenAPI](https://mintlify.com/docs/api-playground/openapi/setup) and [MDX components](https://mintlify.com/docs/api-playground/mdx/configuration). For the starter kit, we are using the following OpenAPI specification.
+1. Visit your [Mailchimp API Settings](https://admin.mailchimp.com/account/api).
+2. Click "Create A Key".
+3. Name your key whatever you'd like, then click "Generate Key".
+4. In the resulting pop-up, you will be shown the API Key. Click "Copy" to copy it to your clipboard - you won't be able to see it again after you click "Done".
+5. You can [save your Access Token to ListingOpen](/account/credentials) to avoid repeating this process.
 
-<Card
-  title="Plant Store Endpoints"
-  icon="leaf"
-  href="https://github.com/mintlify/starter/blob/main/api-reference/openapi.json"
->
-  View the OpenAPI specification file
-</Card>
+Can be found in "Audience" -> "Settings" -> "Audience name and campaign defaults".
 
-## Authentication
+## Mailchimp Audience ID
 
-All API endpoints are authenticated using Bearer tokens and picked up from the specification file.
+You will also need your Audience ID from Mailchimp. To find it, follow these simple steps:
 
-```json
-"security": [
-  {
-    "bearerAuth": []
-  }
-]
-```
+1. Visit your [Mailchimp Audience Dashboard](https://admin.mailchimp.com/audience).
+2. Click "Manage Audience", then "Settings".
+3. Click on "Audience name and campaign defaults".
+3. Underneath "Audience ID", you will find your Audience ID.
+
+## Add Integration
+
+Once you have your Mailchimp API Key and Audience ID, you are ready to integrate with ListingOpen.
+
+1. Under your desired listing, navigate to the "Integrations" tab.
+2. Click Mailchimp.
+3. Paste your Mailchimp API Key into the "API Key" field.
+4. Paset your Mailchimp Audience ID into the "Audience ID" field.
+4. Click "Save & Publish" to finish adding the integration.
+5. You'll know the integration is working when it is labelled "Active".
+
+## Actions
+
+Every new visitor to the listing will automatically result in:
+* Contact created in Mailchimp
+* Contact subscribed to Audience

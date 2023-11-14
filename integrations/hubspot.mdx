@@ -1,33 +1,35 @@
 ---
 title: 'Hubspot'
-description: 'Example section for showcasing API endpoints'
+description: 'Integrate Pipedrive with Hubspot to automatically add new visitors to Contacts.'
 ---
 
-<Note>
-  If you're not looking to build API reference documentation, you can delete
-  this section by removing the api-reference folder.
-</Note>
+## Hubspot Access Token
 
-## Welcome
+You will need a Private App Access Token from Hubspot to integrate with ListingOpen. To create one, follow these simple steps:
 
-There are two ways to build API documentation: [OpenAPI](https://mintlify.com/docs/api-playground/openapi/setup) and [MDX components](https://mintlify.com/docs/api-playground/mdx/configuration). For the starter kit, we are using the following OpenAPI specification.
+1. Visit your [Hubspot dashboard](https://app.hubspot.com).
+2. Click your profile in the top right corner of the page, then click "Profile & Preferences".
+3. Use the sidebar to navigate to "Private Apps" under the "Integrations" dropdown.
+4. Click "Create a private app".
+5. Provide whatever name & description you'd like.
+6. Navigate to the "Scopes" tab.
+7. Search for `crm.objects.contacts`, and enable the "Write" checkbox. You should see `crm.objects.contacts.write` underneath "Selected scopes".
+8. Click the "Create app" button.
+9. In the resulting pop-up, you will be shown the Access Token. Click "Copy" to copy it to your clipboard.
+10. You can [save your Access Token to ListingOpen](/account/credentials) to avoid repeating this process.
 
-<Card
-  title="Plant Store Endpoints"
-  icon="leaf"
-  href="https://github.com/mintlify/starter/blob/main/api-reference/openapi.json"
->
-  View the OpenAPI specification file
-</Card>
+## Add Integration
 
-## Authentication
+Once you have your Private App Access token, you are ready to integrate with ListingOpen.
 
-All API endpoints are authenticated using Bearer tokens and picked up from the specification file.
+1. Under your desired listing, navigate to the "Integrations" tab.
+2. Click Hubspot.
+3. Paste your Private App Access Token into the "Private App Access Token" field.
+4. Click "Save & Publish" to finish adding the integration.
+5. You'll know the integration is working when it is labelled "Active".
 
-```json
-"security": [
-  {
-    "bearerAuth": []
-  }
-]
-```
+## Actions
+
+Every new visitor to the listing will automatically result in:
+* Contact created in Hubspot
+* Note with sign-in answers attached to the Contact

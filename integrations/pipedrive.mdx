@@ -1,33 +1,31 @@
 ---
-title: 'Placester'
-description: 'Example section for showcasing API endpoints'
+title: 'Pipedrive'
+description: 'Integrate Pipedrive with ListingOpen to automatically create a contact, lead, and note for every new visitor.'
 ---
 
-<Note>
-  If you're not looking to build API reference documentation, you can delete
-  this section by removing the api-reference folder.
-</Note>
+## Pipedrive API Token
 
-## Welcome
+You will need a Pipedrive API token to integrate with ListingOpen. To create one, follow these simple steps:
 
-There are two ways to build API documentation: [OpenAPI](https://mintlify.com/docs/api-playground/openapi/setup) and [MDX components](https://mintlify.com/docs/api-playground/mdx/configuration). For the starter kit, we are using the following OpenAPI specification.
+1. Visit your Pipedrive dashboard.
+2. Click your profile in the top right corner of the page, then click "Personal Preferences" under "My Account".
+3. In the "Personal Preferences" page, navigate to the "API" tab.
+4. Copy your personal API token or, if necessary, generate a new token.
+5. You can [save your API token to ListingOpen](/account/credentials) to avoid repeating this process.
 
-<Card
-  title="Plant Store Endpoints"
-  icon="leaf"
-  href="https://github.com/mintlify/starter/blob/main/api-reference/openapi.json"
->
-  View the OpenAPI specification file
-</Card>
+## Add Integration
 
-## Authentication
+Once you have your Pipedrive API token, you are ready to integrate with ListingOpen.
 
-All API endpoints are authenticated using Bearer tokens and picked up from the specification file.
+1. Under your desired listing, navigate to the "Integrations" tab.
+2. Click Pipedrive.
+3. Paste your Pipedrive API token into the "API Token" field.
+4. Click "Save & Publish" to finish adding the integration.
+5. You'll know the integration is working when it is labelled "Active".
 
-```json
-"security": [
-  {
-    "bearerAuth": []
-  }
-]
-```
+## Actions
+
+Every new visitor to the listing will automatically result in:
+* Contact created in Pipedrive
+* Lead created for the Contact
+* Note with sign-in answers attached to the Contact
