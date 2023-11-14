@@ -88,7 +88,7 @@
     {
       "group": "Integrations",
       "pages": [
-        "integrations/placester",
+        "integrations/pipedrive",
         "integrations/hubspot",
         "integrations/mailchimp",
         "integrations/zapier"
