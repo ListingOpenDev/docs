@@ -53,12 +53,12 @@
     {
       "group": "Listings",
       "pages": [
-        "listings/create",
-        "listings/update",
-        "listings/emails",
-        "listings/questions",
-        "listings/create-category",
-        "listings/update-category"
+        "/listings/create",
+        "/listings/update",
+        "/listings/emails",
+        "/listings/questions",
+        "/listings/create-category",
+        "/listings/update-category"
       ]
     },
     {
