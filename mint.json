@@ -57,8 +57,7 @@
         "listings/update",
         "listings/emails",
         "listings/questions",
-        "listings/create-category",
-        "listings/update-category"
+        "listings/categories"
       ]
     },
     {
@@ -80,18 +79,10 @@
     {
       "group": "Automations",
       "pages": [
-        "automations/integration-packages/create",
-        "automations/integration-packages/update",
-        "automations/integration-packages/use",
-        "automations/listing-templates/create",
-        "automations/listing-templates/update",
-        "automations/listing-templates/use",
-        "automations/sign-in-presets/create",
-        "automations/sign-in-presets/update",
-        "automations/sign-in-presets/use",
-        "automations/email-templates/create",
-        "automations/email-templates/update",
-        "automations/email-templates/use"
+        "automations/integration-packages",
+        "automations/listing-templates",
+        "automations/sign-in-presets",
+        "automations/email-templates"
       ]
     },
     {
@@ -107,8 +98,7 @@
       "group": "Compose",
       "pages": [
         "compose/create",
-        "compose/enhance",
-        "compose/request"
+        "compose/enhance"
       ]
     },
     {
