@@ -25,12 +25,6 @@
     "name": "Dashboard",
     "url": "https://dashboard.mintlify.com"
   },
-  "tabs": [
-    {
-      "name": "API Reference",
-      "url": "api-reference"
-    }
-  ],
   "anchors": [
     {
       "name": "Documentation",
@@ -57,33 +51,83 @@
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Listings",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation"
+        "listings/create",
+        "listings/update",
+        "listings/emails",
+        "listings/questions",
+        "listings/create-category",
+        "listings/update-category"
       ]
     },
     {
-      "group": "API Documentation",
+      "group": "Leads",
       "pages": [
-        "api-reference/introduction"
+        "leads/view",
+        "leads/filter",
+        "leads/export"
       ]
     },
     {
-      "group": "Endpoint Examples",
+      "group": "Sign-In's",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "signins/start",
+        "signins/notes",
+        "signins/end"
+      ]
+    },
+    {
+      "group": "Automations",
+      "pages": [
+        "automations/integration-packages/create",
+        "automations/integration-packages/update",
+        "automations/integration-packages/use",
+        "automations/listing-templates/create",
+        "automations/listing-templates/update",
+        "automations/listing-templates/use",
+        "automations/sign-in-presets/create",
+        "automations/sign-in-presets/update",
+        "automations/sign-in-presets/use",
+        "automations/email-templates/create",
+        "automations/email-templates/update",
+        "automations/email-templates/use"
+      ]
+    },
+    {
+      "group": "Integrations",
+      "pages": [
+        "integrations/placester",
+        "integrations/hubspot",
+        "integrations/mailchimp",
+        "integrations/zapier"
+      ]
+    },
+    {
+      "group": "Compose",
+      "pages": [
+        "compose/create",
+        "compose/enhance",
+        "compose/request"
+      ]
+    },
+    {
+      "group": "Organization",
+      "pages": [
+        "organization/invite",
+        "organization/manage"
+      ]
+    },
+    {
+      "group": "Account",
+      "pages": [
+        "account/reset-password",
+        "account/credentials"
       ]
     }
   ],
   "footerSocials": {
-    "twitter": "https://twitter.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "twitter": "https://twitter.com/listingopen",
+    "linkedin": "https://www.linkedin.com/company/listingopen"
   }
 }
