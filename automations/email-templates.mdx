@@ -1,33 +1,40 @@
 ---
 title: 'Email Templates'
-description: 'Example section for showcasing API endpoints'
+description: 'How to create reusable, customizable, follow-up messages.'
 ---
 
-<Note>
-  If you're not looking to build API reference documentation, you can delete
-  this section by removing the api-reference folder.
-</Note>
+<Tip>**Premium Feature** - Automations require a Premium plan.</Tip>
 
-## Welcome
+Email Templates let you create custom emails to follow up with leads.
 
-There are two ways to build API documentation: [OpenAPI](https://mintlify.com/docs/api-playground/openapi/setup) and [MDX components](https://mintlify.com/docs/api-playground/mdx/configuration). For the starter kit, we are using the following OpenAPI specification.
+## Creating Email Templates
 
-<Card
-  title="Plant Store Endpoints"
-  icon="leaf"
-  href="https://github.com/mintlify/starter/blob/main/api-reference/openapi.json"
->
-  View the OpenAPI specification file
-</Card>
+To get started, follow these simple steps:
+1. Visit the [Automations](https://listingopen.com/automations) dashboard.
+2. Click the "Create" button, then select Email Template.
+3. Add the desired messaging into the email sections. Here's how each section is laid out:
 
-## Authentication
+4. Once you're satisfied, click "Next".
+5. Give your template a name and review its content through the preview.
+6. When you're satisfied, click "Create Template".
 
-All API endpoints are authenticated using Bearer tokens and picked up from the specification file.
+## Using Email Templates
 
-```json
-"security": [
-  {
-    "bearerAuth": []
-  }
-]
-```
+<AccordionGroup>
+  <Accordion title="Creating a new listing">
+    If you are [creating a new listing](/listings/create), you'll be able to link your created email template.
+  </Accordion>
+  <Accordion title="Updating an existing listing">
+    If you are [updating an existing listing](/listings/update), you'll be able to switch between any of your created email templates.
+  </Accordion>
+</AccordionGroup>
+
+## Editing Email Templates
+
+To edit an email template, follow these simple steps:
+1. Visit the [Automations](https://listingopen.com/automations) dashboard.
+2. Find the email template you want to edit, then click it.
+3. Make the necessary changes to the content of the template.
+4. Once you are finished, press the dark "Save Changes" button. If you do not do this, none of your changes will be saved.
+
+<Note>Changes made to email templates will apply immediately to all listings that use that email template.</Note>
