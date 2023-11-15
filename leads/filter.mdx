@@ -1,33 +1,22 @@
 ---
 title: 'Filter Leads'
-description: 'Example section for showcasing API endpoints'
+description: 'How to filter captured leads from your open houses.'
 ---
 
-<Note>
-  If you're not looking to build API reference documentation, you can delete
-  this section by removing the api-reference folder.
-</Note>
+After [viewing leads](/leads/view), you are able to effectively filter them. To get started, press the "Filter" button.
 
-## Welcome
+## Listing Visited
 
-There are two ways to build API documentation: [OpenAPI](https://mintlify.com/docs/api-playground/openapi/setup) and [MDX components](https://mintlify.com/docs/api-playground/mdx/configuration). For the starter kit, we are using the following OpenAPI specification.
+If you are viewing all your leads, you are able to add listings to filter by.
 
-<Card
-  title="Plant Store Endpoints"
-  icon="leaf"
-  href="https://github.com/mintlify/starter/blob/main/api-reference/openapi.json"
->
-  View the OpenAPI specification file
-</Card>
+## Contact Provided
 
-## Authentication
+If selected, leads will be filtered out if they failed to provide this contact detail.
 
-All API endpoints are authenticated using Bearer tokens and picked up from the specification file.
+For example, selecting "Phone Number" will result in visitors who did not provide their phone numbers being removed from results.
 
-```json
-"security": [
-  {
-    "bearerAuth": []
-  }
-]
-```
+## Sign-In Answers
+
+You can filter leads by their answers to sign-in questions.
+
+To get started, click on a question and select a required answer (or multiple!). You'll know the filter has been activated when the border of the question turns purple.
