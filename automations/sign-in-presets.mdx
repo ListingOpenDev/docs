@@ -1,33 +1,39 @@
 ---
 title: 'Sign-In Presets'
-description: 'Example section for showcasing API endpoints'
+description: 'How to create reusable lists of sign-in questions for listings.'
 ---
 
-<Note>
-  If you're not looking to build API reference documentation, you can delete
-  this section by removing the api-reference folder.
-</Note>
+<Tip>**Premium Feature** - Automations require a Premium plan.</Tip>
 
-## Welcome
+Sign-In Presets let you create sets of sign-in questions and apply them to any listing.
 
-There are two ways to build API documentation: [OpenAPI](https://mintlify.com/docs/api-playground/openapi/setup) and [MDX components](https://mintlify.com/docs/api-playground/mdx/configuration). For the starter kit, we are using the following OpenAPI specification.
+## Creating Sign-In Presets
 
-<Card
-  title="Plant Store Endpoints"
-  icon="leaf"
-  href="https://github.com/mintlify/starter/blob/main/api-reference/openapi.json"
->
-  View the OpenAPI specification file
-</Card>
+To get started, follow these simple steps:
+1. Visit the [Automations](https://listingopen.com/automations) dashboard.
+2. Click the "Create" button, then select Sign-In Preset.
+3. Add the desired questions into your preset.
+4. To re-order questions, you can simply drag and drop them as needed.
+5. Give your package a name and review the questions added.
+6. When you're satisfied, click "Create Preset".
 
-## Authentication
+## Using Sign-In Presets
 
-All API endpoints are authenticated using Bearer tokens and picked up from the specification file.
+<AccordionGroup>
+  <Accordion title="Creating a new listing">
+    If you are [creating a new listing](/listings/create), you'll be able to apply your created sign-in presets.
+  </Accordion>
+  <Accordion title="Creating a new listing template">
+    If you are [creating a new listing template](/automations/listing-templates), you'll be able to include your created sign-in presets into the template.
+  </Accordion>
+</AccordionGroup>
 
-```json
-"security": [
-  {
-    "bearerAuth": []
-  }
-]
-```
+## Editing Sign-In Presets
+
+To edit a sign-in preset, follow these simple steps:
+1. Visit the [Automations](https://listingopen.com/automations) dashboard.
+2. Find the sign-in preset you want to edit, then click it.
+3. Make the necessary changes to the questions in the preset - remember to save each individual change.
+4. Once you are finished, press the dark "Save Changes" button. If you do not do this, none of your changes will be saved.
+
+<Warning>Changes made to sign-in presets will not apply to any listings or listing templates created previously. Changes will only apply to future uses of the sign-in preset.</Warning>
