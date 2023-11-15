@@ -80,9 +80,9 @@
       "group": "Automations",
       "pages": [
         "automations/integration-packages",
-        "automations/listing-templates",
         "automations/sign-in-presets",
-        "automations/email-templates"
+        "automations/email-templates",
+        "automations/listing-templates"
       ]
     },
     {
