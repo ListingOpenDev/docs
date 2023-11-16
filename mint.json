@@ -71,9 +71,9 @@
     {
       "group": "Open House",
       "pages": [
-        "signins/start",
-        "signins/notes",
-        "signins/end"
+        "openhouse/start",
+        "openhouse/notes",
+        "openhouse/end"
       ]
     },
     {
