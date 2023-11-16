@@ -69,7 +69,7 @@
       ]
     },
     {
-      "group": "Sign-In's",
+      "group": "Open House",
       "pages": [
         "signins/start",
         "signins/notes",
