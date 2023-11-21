@@ -1,33 +1,52 @@
 ---
-title: 'Create Sign-In Questions'
-description: 'Example section for showcasing API endpoints'
+title: 'Sign-In Questions'
+description: 'How to add, update, reorder, and remove questions your visitors answer when they sign in to your open house.'
 ---
 
-<Note>
-  If you're not looking to build API reference documentation, you can delete
-  this section by removing the api-reference folder.
-</Note>
+To get started, visit your [Listings](https://listingopen.com/listings) dashboard and click on the listing whose sign-in questions you would like to manage. Then, navigate to the "Sign-In" tab.
 
-## Welcome
+## Adding Questions
 
-There are two ways to build API documentation: [OpenAPI](https://mintlify.com/docs/api-playground/openapi/setup) and [MDX components](https://mintlify.com/docs/api-playground/mdx/configuration). For the starter kit, we are using the following OpenAPI specification.
+To add a new sign-in question, begin by clicking on the "Add Question" button.
 
-<Card
-  title="Plant Store Endpoints"
-  icon="leaf"
-  href="https://github.com/mintlify/starter/blob/main/api-reference/openapi.json"
->
-  View the OpenAPI specification file
-</Card>
+You will be prompted to choose the type of question to add. More details can be found below:
+<AccordionGroup>
+  <Accordion title="Yes / No">
+    Yes / No questions give your visitors a simple choice between Yes or No.
 
-## Authentication
+    For example,
+    <img src="https://listingopen-photos.s3.us-east-2.amazonaws.com/guides/signin_1.png" />
+  </Accordion>
+  <Accordion title="Single Select">
+    Single Select questions give your visitor multiple options from which they must choose exactly one answer.
 
-All API endpoints are authenticated using Bearer tokens and picked up from the specification file.
+    For example,
+    <img src="https://listingopen-photos.s3.us-east-2.amazonaws.com/guides/signin_2.png" />
+  </Accordion>
+  <Accordion title="Multi Select">
+    Multi Select questions give your visitors multiple options from which they can choose any combination of answers. They must select **at least one** of the available options.
 
-```json
-"security": [
-  {
-    "bearerAuth": []
-  }
-]
-```
+    For example,
+    <img src="https://listingopen-photos.s3.us-east-2.amazonaws.com/guides/signin_3.png" />
+  </Accordion>
+  <Accordion title="Open Ended">
+    Open Ended questions let you gather written feedback from your visitors. Visitors can type as much or as little as they want into the response box. They **can** leave these answers blank.
+
+    For example,
+    <img src="https://listingopen-photos.s3.us-east-2.amazonaws.com/guides/signin_4.png" />
+  </Accordion>
+</AccordionGroup>
+
+## Updating Questions
+
+To update an existing sign-in question, simply click on it. You can edit the question text or remove the question entirely.
+
+For Single or Multi Select questions, you can add, edit, or remove available answer options.
+
+Make sure to click the "Save Changes" button when you are done, and then the "Save & Publish" button, to save your updates.
+
+## Reordering Questions
+
+To change the order of sign-in questions, simply click and drag them around until they are in the order you desire.
+
+Make sure to click "Save & Publish" button when you are done to save your updates.
