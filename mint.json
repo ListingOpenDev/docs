@@ -104,6 +104,7 @@
     {
       "group": "Organization",
       "pages": [
+        "organization/role",
         "organization/invite",
         "organization/manage"
       ]
